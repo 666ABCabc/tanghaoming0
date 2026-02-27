@@ -1,0 +1,53 @@
+# Logs
+# Логи
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+# Зависимости
+node_modules
+# Системные файлы macOS
+.DS_Store
+# Папки сборки
+dist
+dist-ssr
+# Покрытие тестов
+coverage
+# Локальные файлы
+*.local
+
+# Editor directories and files
+# Директории редакторов кода
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Файлы TypeScript
+*.tsbuildinfo
+# Кэш ESLint
+.eslintcache
+
+# Cypress
+# Директории Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+# Директории Vitest
+__screenshots__/
+
+# Vite
+# Временные файлы Vite
+*.timestamp-*-*.mjs
+
+# Environment variables
+# Файлы переменных окружения (содержат чувствительные данные)
+.env
+.env.local
