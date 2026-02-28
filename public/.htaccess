@@ -1,0 +1,16 @@
+Options -MultiViews
+RewriteEngine On
+
+# ПРАВИЛО 1: Статические файлы
+# Если файл или директория существуют - отдаём их напрямую
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# ПРАВИЛО 2: API запросы
+# Все URL, начинающиеся с /api/, пропускаем к бэкенду
+RewriteRule ^api/ - [L]
+
+# ПРАВИЛО 3: Vue Router
+# Все остальные запросы отправляем на index.html
+RewriteRule ^ index.html [L]
